@@ -193,4 +193,30 @@ Cards
     transform: scale(1.5);
 }
 
+   /* 
+========================
+Cards Media 
+========================
+ */
+
+ @media screen and (min-width:768px){
+     .cards-center{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-column-gap: 2rem;
+     }
+ }
+
+ @media screen and (min-width:992px){
+     .cards-center{
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+ }
+
+ @media screen and (min-width:1170px){
+     .cards-center{
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+ }
+
 
