@@ -212,5 +212,84 @@ Cards Media
     grid-template-rows: auto 1fr auto;
 }
 
+   /* 
+========================
+Tiles
+========================
+ */
+
+.tile{
+    text-align: center;
+}
+
+.tiles-center{
+    max-width: 80vw;
+    margin: 2rem auto;
+    max-width: 1170px;
+    max-height: 100vh;
+}
+
+.tiles-center{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(356px, 1fr));
+}
+
+@media screen and (min-width:1260px){
+    .tiles-center{
+    display: grid;
+    grid-template-areas: 
+    "a a a b"
+    "a a a c"
+    "d d d d"
+    "e f f f"
+    "e g z r"
+    ;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,200px);
+    
+}
+
+.tile-1{
+    grid-area: a;
+}
+
+.tile-2{
+    grid-area: b;
+}
+
+.tile-3{
+    grid-area: c;
+}
+
+.tile-4{
+    grid-area: d;
+}
+
+.tile-5{
+    grid-area: e;
+}
+
+.tile-6{
+    grid-area: f;
+}
+
+.tile-7{
+    grid-area: g;
+}
+
+.tile-8{
+    grid-area: z;
+}
+
+.tile-9{
+    grid-area: r;
+}
+
+.tiles img{
+    height: 100%;
+}
+}
 
 
