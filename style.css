@@ -206,5 +206,11 @@ Cards Media
     grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
 }
 
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
 
 
