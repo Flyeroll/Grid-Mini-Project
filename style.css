@@ -199,24 +199,12 @@ Cards Media
 ========================
  */
 
- @media screen and (min-width:768px){
-     .cards-center{
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         grid-column-gap: 2rem;
-     }
- }
+ 
+.cards-center{
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+}
 
- @media screen and (min-width:992px){
-     .cards-center{
-         grid-template-columns: 1fr 1fr 1fr;
-     }
- }
-
- @media screen and (min-width:1170px){
-     .cards-center{
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-     }
- }
 
 
