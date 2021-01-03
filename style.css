@@ -294,3 +294,86 @@ Tiles
 }
 
 
+
+   /* 
+========================
+Lay Out
+========================
+ */
+
+ *{
+     margin: 0;
+     padding: 0;
+ }
+
+ .header{
+     background: brown;
+     text-align: center;
+     padding: 1rem;
+     font-size: 1.5rem;
+     color: var(--mainWhite);
+ }
+
+ .lil{
+     display: flex;
+     height: 3rem;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 0.2rem;
+     background: var(--darkGrey);
+     font-size: 2rem;
+    }
+
+    .lil a{
+        color: white;
+        transition: var(--mainTransition);
+    }
+
+    .lorem {
+        font-size: 1.2rem;
+        margin: 1rem 2rem;
+    }
+
+    
+    .center1{
+        background: cornsilk;
+        min-height: 100vh;
+        position: relative;
+    }
+    
+    .icons1{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        background: brown;
+        position: absolute;
+        width: 100%;
+        bottom: 24px;
+    }
+    footer{
+        background: var(--mainBlack);
+        color: var(--mainWhite);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+    }
+
+    .lil a:hover {
+        background: var(--primaryColor);
+        color: yellow;
+        transform: translateX(10px);
+    }
+
+    .lil:hover {
+        background: var(--primaryColor);
+        color: yellow;
+        transform: translateX(10px);
+    }
+    
+
+
+    
+    
+    
+    
