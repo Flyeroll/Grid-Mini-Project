@@ -364,16 +364,31 @@ Lay Out
         color: yellow;
         transform: translateX(10px);
     }
+    
 
-    .lil:hover {
-        background: var(--primaryColor);
+
+    @media screen and (min-width:992px){
+        .parent{
+     display: grid;
+     grid-template-columns: repeat(4,1rem);
+     justify-content: space-evenly;
+     background: var(--darkGrey);
+    }
+
+    .lil a:hover {
         color: yellow;
         transform: translateX(10px);
     }
-    
-
-
-    
+    :root{
+     --primaryColor:--darkGrey;
+     --mainBlack:#222;
+     --mainWhite:#fff;
+     --oftWhite:#f7f7f7;
+     --darkGrey:#afafaf;
+     --mainTransition:all 0.3s linear;
+     --mainSpacing:0.2rem;
+ }
+    }
     
     
     
